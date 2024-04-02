@@ -9,7 +9,7 @@ const { lightningChart, PalettedFill, ColorRGBA, AxisTickStrategies, LUT, emptyF
 
 const chart = lightningChart()
     .Chart3D({
-        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,,
     })
     .setBoundingBox({ x: 0.7, y: 0.5, z: 1 })
     .setTitle('Real-Time Airplane Temperature')
