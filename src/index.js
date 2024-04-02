@@ -24,7 +24,7 @@ chart
         ),
     )
 
-fetch(document.head.baseURI + 'examples/assets/1502/air.obj')
+fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1502/air.obj')
     .then((response) => response.text())
     .then((data) => {
         const modelParsed = new obj.Mesh(data)
