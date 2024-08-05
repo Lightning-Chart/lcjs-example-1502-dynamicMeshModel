@@ -2,7 +2,7 @@
  * Histogram of world population by age per year.
  */
 
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 const obj = require('webgl-obj-loader')
 
 const { lightningChart, PalettedFill, ColorRGBA, AxisTickStrategies, LUT, emptyFill, Themes } = lcjs
@@ -36,7 +36,7 @@ fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pat
             .setScale(0.0025)
             .setModelGeometry({ vertices: modelParsed.vertices, indices: modelParsed.indices, normals: modelParsed.vertexNormals })
             .setHighlightOnHover(false)
-            .setName('Airplane')
+            .setName('Airplane temperature')
 
         const palette = new PalettedFill({
             lookUpProperty: 'value',
