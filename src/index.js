@@ -3,7 +3,6 @@
  */
 
 const lcjs = require('@lightningchart/lcjs')
-const obj = require('webgl-obj-loader')
 
 const { lightningChart, PalettedFill, ColorRGBA, AxisTickStrategies, LUT, emptyFill, Themes } = lcjs
 
@@ -29,14 +28,7 @@ chart
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1502/air.obj')
     .then((response) => response.text())
     .then((data) => {
-        const modelParsed = new obj.Mesh(data)
-
-        const model = chart
-            .addMeshModel()
-            .setScale(0.0025)
-            .setModelGeometry({ vertices: modelParsed.vertices, indices: modelParsed.indices, normals: modelParsed.vertexNormals })
-            .setHighlightOnHover(false)
-            .setName('Airplane temperature')
+        const model = chart.addMeshModel().setScale(0.0025).setModelFromObj(data).setHighlightOnHover(false).setName('Airplane temperature')
 
         const palette = new PalettedFill({
             lookUpProperty: 'value',
