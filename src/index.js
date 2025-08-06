@@ -147,6 +147,4 @@ fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pat
             // Start the animation.
             frame()
         })
-
-        const legend = chart.addLegendBox().add(chart)
     })
