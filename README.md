@@ -61,6 +61,6 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[Mesh Model]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/MeshModel3D.html
-[Vertex Values]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/MeshModel3D.html#setVertexValues
+[Mesh Model]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/MeshModel3D.html
+[Vertex Values]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/MeshModel3D.html#setVertexValues
 
